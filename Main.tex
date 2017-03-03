@@ -3,6 +3,7 @@
 
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
+\usepackage{lmodern}
 
 \usepackage[font=small,labelfont=bf]{caption}
 \usepackage{subfiles}
@@ -15,6 +16,16 @@
 \usepackage{array}
 \usepackage{calc}
 \newcolumntype{N}{@{}m{0pt}@{}}
+
+\setcounter{secnumdepth}{4}
+\setcounter{tocdepth}{4}
+\setcounter{secnumdepth}{4}
+
+\usepackage{float}
+
+\usepackage{pbox}
+
+\usepackage[titletoc]{appendix}
 
 \usepackage[framemethod=tikz]{mdframed}
 \global\mdfdefinestyle{defStyle}{%
@@ -124,6 +135,14 @@ frametitlealignment=\center
 \end{center}
 \restoregeometry
 
+\thispagestyle{empty}
+\cleardoublepage
+\newpage
+\tableofcontents
+
+\newpage
+\listoffigures
+\listoftables
 
 %%%%%%%%%%%%%%%%%%%
 
@@ -135,5 +154,11 @@ frametitlealignment=\center
 \input{introduzione}
 \input{chapter1}
 \input{chapter2}
+\input{chapter3}
+
+\begin{appendices}
+\input{Appendix1}
+\end{appendices}
+
 
 \end{document}
