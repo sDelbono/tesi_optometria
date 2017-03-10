@@ -76,30 +76,26 @@ frametitlealignment=\center
 % Create a new page
 \newpage
 % Set borders
-\newgeometry{top=3cm,bottom=3cm,inner=2.7cm,outer=2.7cm}
+\newgeometry{top=2cm,bottom=3cm,inner=2.7cm,outer=2.7cm}
 % Remove page number
 \thispagestyle{empty}
 % Remove default indentation of paragraph
 \noindent
 % Move the content a bit on the left
 \hspace*{-1mm}
-% Include the logo
-\includegraphics[width=0.2\columnwidth]{source/immagini/logo-bicocca-gray.jpg}
-% Place some space between text and image
-\hspace*{2mm}
-% Open a box in which place the header
-% use \par to space the lines
-\begin{minipage}[b][][c]{0.8\columnwidth}
-\begin{spacing}{1.4}
-{\large\textsc{Universit\'a degli Studi di Milano Bicocca}\par}
-{\large\textbf{Scuola di Scienze}\par}
-{\large\textbf{Dipartimento di Scienze dei Materiali}\par}
-{\large\textbf{Corso di Laurea in Ottica e Optometria}\par}
-\end{spacing}
-\end{minipage}
-% Vertical fill space
-\vfill
 
+\begin{center}
+{\LARGE\textsc{Universit\'a degli Studi di Milano-Bicocca}\par}
+{\Large\textsc{Scuola di Scienze}\par}
+{\Large\textsc{Corso di Laurea in Ottica e Optometria}\par}
+\end{center}
+
+\\\
+% Include the logo
+\begin{center}
+\includegraphics[scale=1]{source/immagini/logo_bicocca_colorato.png}
+\end{center}
+\vfill
 
 \begin{center}
 {\Huge\textsc{\textbf{Correlazione tra sistema visivo e apparato stomatognatico }}\par}
@@ -107,6 +103,19 @@ frametitlealignment=\center
 % Fill the remaining space
 \vfill
 \large
+% Leave some space
+\vskip 1cm
+
+% Write candidate on the right
+\begin{flushright}
+\textbf{Tesi di Laurea di:}\\
+\hspace*{2em}Serena \textsc{Delbono}\\
+\hspace*{2em}Matricola 782525
+
+\textbf{ \\ Appello di laurea:}\\
+\hspace*{2em}16 Marzo 2017
+\end{flushright}
+\vfill
 % Place the advisor under title, on the left
 \begin{flushleft}
 \textbf{Relatore:}\\
@@ -118,21 +127,14 @@ frametitlealignment=\center
 \hspace*{2em}\textit{Prof.ssa} Nadia \textsc{Mattioli}\\
 \end{flushleft}
 % Leave some space
-\vskip 1cm
-% Write candidate on the right
-\begin{flushright}
-\textbf{Relazione della prova finale di:}\\
-\hspace*{2em}Serena \textsc{Delbono}\\
-\hspace*{2em}Matricola 782525
+\vskip 2cm
 
-\textbf{ \\ Appello di laurea:}\\
-\hspace*{2em}16 Marzo 2017
-\end{flushright}
-\vfill
 % Place year at bottom
 \begin{center}
 \textsc{\textbf{Anno Accademico 2015-2016}}
 \end{center}
+
+
 \restoregeometry
 
 \thispagestyle{empty}
